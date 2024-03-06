@@ -2,14 +2,14 @@ class Solution {
     public int solution(int n) {
         int answer = 0;
         
-        for (int i = 0; i <= n; i++) {
-            int div = 0;
+        for (int i = 1; i <= n; i++) {
+            int divCount = 0;
             for (int j = 1; j <= i; j++) {
                 if (i % j == 0) {
-                    div++;
+                    divCount++;
                 }
             }
-            if (div >= 3) {
+            if (divCount >= 3) {
                 answer++;
             }
         }
