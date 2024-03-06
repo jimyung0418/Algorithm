@@ -11,7 +11,7 @@ class Solution {
             }
             if (contains == spell.length) {
                 answer -= 1;
-                break;
+                // break;
             }
         }
 
