@@ -10,10 +10,10 @@ class Solution {
 //         } else {
 //             answer++;
 //         }
-        int answer = 1;
-        int painted = section[0] + m - 1;
+        int answer = 0;
+        int painted = 0;
         
-        for (int i=1; i < section.length; i++) {
+        for (int i=0; i < section.length; i++) {
             if (painted < section[i]) {
                 answer++;
                 painted = section[i] + m - 1;
