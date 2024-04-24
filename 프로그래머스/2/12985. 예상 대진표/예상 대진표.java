@@ -10,6 +10,7 @@ class Solution
             } else {
                 a = (a + 1) / 2;
             }
+            
             if (b % 2 == 0) {
                 b /= 2;
             } else {
