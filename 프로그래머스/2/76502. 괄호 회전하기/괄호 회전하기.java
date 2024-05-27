@@ -19,7 +19,6 @@ class Solution {
                     stack.push(c);
                 }
             }
-            
             if (stack.isEmpty()) {
                 answer++;
             }
