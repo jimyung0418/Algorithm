@@ -1,13 +1,10 @@
 class Solution {
     public int solution(int[] arr) {
-        int answer = 0;
-        int result = arr[0];
+        int answer = arr[0];
         
         for (int i = 1; i < arr.length; i++) {
-            result = lcm(result, arr[i]);
+            answer = lcm(answer, arr[i]);
         }
-        
-        answer = result;
         
         return answer;
     }
