@@ -6,10 +6,8 @@ class Main {
         int num = sc.nextInt();
         
         for (int i = 1; i <= num; i++) {
-            int tmp = i;
-            while (tmp != 0) {
+            for (int j = 0; j < i; j++) {
                 System.out.print("*");
-                tmp--;
             }
             System.out.println();
         }
