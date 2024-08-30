@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String s = sc.nextLine().toLowerCase();
+        
+        int[] arr = new int[26];
+        
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            arr[ch - 'a']++;
+        }
+        
+        int max = -1;
+        char most = '0';
+        boolean flag = false;
+        
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                most = (char)(i + 'a');
+                flag = false;
+            } else if (arr[i] == max && max != 0) {
+                flag = true;
+            }
+        }
+        
+        if (flag) {
+            System.out.println("?");
+        } else {
+            System.out.println(Character.toUpperCase(most));
+        }
+    }
+}
